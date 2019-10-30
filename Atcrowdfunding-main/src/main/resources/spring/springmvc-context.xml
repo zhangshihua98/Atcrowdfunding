@@ -40,7 +40,8 @@
         class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">  
         <property name="exceptionMappings">  
             <props>
-                <prop key="java.lang.Exception">error/error</prop>
+               <!--   <prop key="java.lang.Exception">error/error</prop> -->
+                <prop key="com.atguigu.atcrowdfunding.exception.LoginFailException">login</prop>
             </props>  
         </property>  
     </bean>
